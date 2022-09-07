@@ -1,0 +1,116 @@
+.introduction-container {
+  color: white;
+  background-color: #000000;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+.hide-introduction {
+  display: none;
+}
+.video-container {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.video {
+  min-height: 110%;
+  min-width: 100%;
+  z-index: 1;
+}
+.introduction-name {
+  width: 80%;
+  color: transparent;
+  position: absolute;
+  font-size: 35px;
+  font-weight: 600;
+  z-index: 2;
+  animation: intro 10s ease-out 3.1s;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .introduction-name {
+    font-size: 80px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .introduction-name {
+    font-size: 130px;
+  }
+}
+
+@keyframes intro {
+  0% {
+    color: white;
+    scale: 0;
+    text-shadow: 0 0 20px red;
+  }
+  4% {
+    color: white;
+    scale: 5;
+    text-shadow: 0 0 10px red;
+  }
+  10% {
+    color: white;
+    scale: 1;
+    text-shadow: 0 0 150px red;
+  }
+  18% {
+    color: white;
+    scale: 1;
+    text-shadow: 0 0 10px aqua;
+  }
+  28% {
+    color: white;
+    scale: 1;
+    text-shadow: 0 0 50px aqua;
+  }
+  35% {
+    color: white;
+    scale: 1;
+    text-shadow: 0 0 0px aqua;
+  }
+  28% {
+    color: white;
+    scale: 1;
+    text-shadow: 0 0 50px aqua;
+  }
+  35% {
+    color: white;
+    scale: 1;
+    text-shadow: 0 0 0px aqua;
+  }
+  42% {
+    color: white;
+    scale: 1;
+    text-shadow: 0 0 50px aqua;
+  }
+  52% {
+    color: white;
+    scale: 1;
+    text-shadow: 0 0 0px aqua;
+  }
+  60% {
+    color: white;
+    scale: 1;
+    text-shadow: 0 0 30px aqua;
+  }
+  75% {
+    color: white;
+    scale: 1;
+    text-shadow: 0 0 0px aqua;
+  }
+
+  100% {
+    color: white;
+    scale: 1;
+    text-shadow: 0 0 10px aqua;
+  }
+}

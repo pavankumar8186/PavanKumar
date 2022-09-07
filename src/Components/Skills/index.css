@@ -1,0 +1,129 @@
+.skills-container {
+  background-color: #c4cbcd50;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  scroll-snap-align: start;
+}
+.skills-heading-container {
+  height: 250px;
+  width: 300px;
+  background-image: url("https://res.cloudinary.com/dn6ibrmrq/image/upload/v1661865192/port%20folio/Pngtree_artistic_frame_brush_stroke_paint_5241310_ndt6sr.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scale: 0.8;
+  margin: 0px;
+}
+.skills-heading {
+  color: #ffffff;
+  font-size: 25px;
+  font-family: papyrus;
+  font-weight: bolder;
+  padding-top: 20px;
+}
+.skills-list-container {
+  width: 80%;
+  min-height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.skills-list-item {
+  width: 200px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  opacity: 0.8;
+  padding: 15px;
+  margin: 10px;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 15px;
+}
+
+.item1 {
+  box-shadow: 1px 1px 10px 5px #00000010;
+  animation: skill 1s linear infinite;
+}
+.item2 {
+  box-shadow: 1px 1px 10px 5px #00000010;
+  animation: skill 1.4s linear infinite;
+}
+.item3 {
+  box-shadow: 1px 1px 10px 5px #00000010;
+  animation: skill 1.5s linear infinite;
+}
+.item4 {
+  box-shadow: 1px 1px 10px 5px #00000010;
+  animation: skill 1.6s linear infinite;
+}
+.item5 {
+  box-shadow: 1px 1px 10px 5px #00000010;
+  animation: skill 1.5s linear infinite;
+}
+.item6 {
+  box-shadow: 1px 1px 10px 5px #00000010;
+  animation: skill 1.2s linear infinite;
+}
+.item7 {
+  box-shadow: 1px 1px 10px 5px #00000010;
+  animation: skill 1.6s linear infinite;
+}
+.item8 {
+  box-shadow: 1px 1px 10px 5px #00000010;
+  animation: skill 1.4s linear infinite;
+}
+
+.item9 {
+  box-shadow: 1px 1px 10px 5px #00000010;
+  animation: skill 1.2s linear infinite;
+}
+
+.skills-list-item:hover {
+  box-shadow: 3px 3px 15px 1px purple;
+  animation: none;
+}
+.skills-logo {
+  height: 50px;
+  margin-right: 10px;
+}
+.skill-description {
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-weight: 700;
+}
+@keyframes skill {
+  0% {
+    position: relative;
+    top: 0px;
+  }
+  25% {
+    position: relative;
+    top: -6px;
+  }
+
+  75% {
+    position: relative;
+    top: 6px;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+  }
+}

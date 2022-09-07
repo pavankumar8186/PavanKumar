@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.navigation-container {
+  background-color: transparent;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: 0.3s;
+  border-radius: 50%;
+  z-index: 4;
+}
+.navigation {
+  background-color: rgba(0, 0, 255, 0.486);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 5px gray;
+  scale: 0.7;
+  z-index: 4;
+}
+.hide-navigation {
+  position: fixed;
+  bottom: -30px;
+  right: -30px;
+  scale: 0.3;
+  transition: 0.8s;
+}
+a {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .navigation-container {
+    scale: 0.9;
+    bottom: 60px;
+    right: 60px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navigation-container {
+    scale: 1.2;
+    bottom: 100px;
+    right: 100px;
+  }
+}
+.floating-menu {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 50%;
+  border-radius: 50%;
+  transition: 0.05s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  box-shadow: 5px 5px 10px #bbbbbb40, -5px -5px 10px #bbbbbb20,
+    inset 3px 3px 3px 3px #bbbbbb40, inset -3px -3px 3px 3px #ffffff;
+  border-radius: 50%;
+  z-index: 3;
+}
+.floating-menu:active {
+  scale: 0.7;
+}
+.menu {
+  background-color: #37c3d7;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+
+  transition: transform 0.5s, width 0.5s, height 0.5s;
+  transition-delay: 0.8s, 0.2s, 0.2s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  overflow: hidden;
+
+  -webkit-user-select: none;
+}
+
+.navigation.active .floating-menu ~ .menu {
+  transform: translateY(-180px);
+  width: 50px;
+  height: 250px;
+  border-radius: 25px;
+  transition: transform 0.5s, width 0.5s, height 0.5s;
+  transition-delay: 0s, 0.5s, 0.5s;
+}
+
+.menu-option {
+  scale: 0;
+  transition: 0.7s;
+}
+
+.navigation.active .floating-menu ~ .menu .menu-option {
+  scale: 1;
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.menu-option-icon {
+  height: 20px;
+  width: 20px;
+  color: #231c85;
+}

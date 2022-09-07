@@ -1,0 +1,151 @@
+.home-bg-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://res.cloudinary.com/dn6ibrmrq/image/upload/v1659423856/port%20folio/space_ozc3cf.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  overflow-x: hidden;
+  scroll-snap-align: start;
+}
+.home-content-container {
+  width: 100%;
+  padding-left: 20px;
+}
+.home-welcome-content {
+  color: #ea8a81;
+  font-family: cursive;
+  font-size: 16px;
+  animation: visible 1s ease-out;
+}
+.home-name {
+  color: #f2e0ff;
+  font-family: Georgia, "Times New Roman", Times, serif, cursive;
+  font-size: 25px;
+  font-weight: 500;
+  animation: visible 1s ease-out 0.2s;
+}
+.home-specialization {
+  color: #80dae3;
+  font-family: Calibri;
+  font-size: 15px;
+  font-weight: 500;
+  word-spacing: 1.5;
+  margin-top: 50px;
+  animation: visible 1s ease-out 0.4s;
+}
+.home-description {
+  color: #80dae3;
+  font-family: Calibri;
+  font-size: 15px;
+  font-weight: 500;
+  word-spacing: 1.5;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  animation: visible 1s ease-out 0.6s;
+}
+.hide {
+  display: none;
+}
+@media screen and (min-width: 576px) {
+  .home-content-container {
+    width: 100%;
+    padding-left: 50px;
+  }
+  .home-welcome-content {
+    font-size: 18px;
+  }
+  .home-name {
+    font-size: 38px;
+  }
+  .home-specialization {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .home-description {
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-content-container {
+    width: 100%;
+    padding-left: 50px;
+  }
+  .home-welcome-content {
+    font-size: 18px;
+  }
+  .home-name {
+    font-size: 50px;
+    margin-top: 10px;
+  }
+  .home-specialization {
+    font-size: 22px;
+    margin-top: 35px;
+  }
+  .home-description {
+    font-size: 22px;
+    margin-top: 20px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .home-content-container {
+    width: 60%;
+    padding-left: 100px;
+  }
+  .home-welcome-content {
+    font-size: 25px;
+  }
+
+  .home-name {
+    font-size: 65px;
+  }
+  .home-specialization {
+    font-size: 26px;
+  }
+  .home-description {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .home-content-container {
+    width: 65%;
+    padding-left: 100px;
+  }
+  .home-welcome-content {
+    font-size: 30px;
+  }
+
+  .home-name {
+    font-size: 85px;
+  }
+  .home-specialization {
+    font-size: 36px;
+  }
+  .home-description {
+    font-size: 36px;
+  }
+}
+
+@keyframes visible {
+  from {
+    opacity: 0;
+    position: relative;
+    top: 80px;
+  }
+  to {
+    opacity: 0.7;
+    position: relative;
+    top: 0;
+  }
+}
+/* planet content */

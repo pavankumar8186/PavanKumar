@@ -1,0 +1,292 @@
+.contact-bg-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://res.cloudinary.com/dn6ibrmrq/image/upload/v1661436585/port%20folio/19362653_ljvkpd.jpg");
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  scroll-snap-align: start;
+}
+.contact-heading {
+  color: blue;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 10px;
+  background-color: #fafafa;
+  box-shadow: 5px 5px 10px #bbbbbb40, -5px -5px 10px #bbbbbb20,
+    inset 5px 5px 5px 5px #ffffff, inset -5px -5px 10px #bbbbbb20;
+  border-radius: 10px;
+  -webkit-user-select: none;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .contact-heading {
+    color: blue;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 10px;
+    background-color: #fafafa;
+    box-shadow: 5px 5px 10px #bbbbbb40, -5px -5px 10px #bbbbbb20,
+      inset 5px 5px 5px 5px #ffffff, inset -5px -5px 10px #bbbbbb20;
+    border-radius: 10px;
+    -webkit-user-select: none;
+    margin-top: 30px;
+  }
+}
+.contact-heading:active {
+  scale: 0.9;
+}
+.contact-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+.contact-form-container {
+  background-color: #f9d5d2;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 0px 20px #dcdcdc;
+  border-radius: 20px;
+  padding: 30px;
+  padding-bottom: 100px;
+}
+.contact-image {
+  height: 50px;
+  margin-bottom: 50px;
+}
+.contact-name-container1 {
+  background-color: #f9f9f9;
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 5px 5px 10px #bbbbbb40, -5px -5px 10px #bbbbbb20,
+    inset 3px 3px 2px 2px #bbbbbb20, inset -5px -5px 5px #ffffff;
+  box-sizing: border-box;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+.contact-name-container1:hover {
+  width: 100%;
+  height: 35px;
+}
+.contact-name-container1::before {
+  content: "Name";
+  color: gray;
+  font-weight: bolder;
+  opacity: 0.5;
+  position: relative;
+  top: 4px;
+  width: 50px;
+  height: 20px;
+  left: 40%;
+  color: #00000090;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: gray;
+  z-index: 10;
+  background-color: transparent;
+  transition: 0.5s;
+}
+.contact-name-container1:hover::before {
+  color: #af147290;
+  position: relative;
+  left: 30px;
+  top: -16px;
+  background-color: #f9d5d2;
+  outline: 6px ridge #f3aba570;
+  padding: 0px 10px;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.contact-name-container2 {
+  background-color: #f9f9f9;
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 5px 5px 10px #bbbbbb40, -5px -5px 10px #bbbbbb20,
+    inset 3px 3px 2px 2px #bbbbbb20, inset -5px -5px 5px #ffffff;
+  box-sizing: border-box;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+.contact-name-container2:hover {
+  width: 100%;
+  height: 35px;
+}
+.contact-name-container2::before {
+  content: "Email";
+  color: gray;
+  font-weight: bolder;
+  opacity: 0.5;
+  position: relative;
+  top: 4px;
+  width: 50px;
+  height: 20px;
+  left: 40%;
+  color: #00000090;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: gray;
+  z-index: 10;
+  background-color: transparent;
+  transition: 0.5s;
+}
+.contact-name-container2:hover::before {
+  color: #af147290;
+  position: relative;
+  left: 30px;
+  top: -16px;
+  background-color: #f9d5d2;
+  outline: 6px ridge #f3aba570;
+  padding: 0px 10px;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.contact-name-container3 {
+  width: min-content;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 14px;
+}
+
+.contact-name-container3:hover {
+  width: 100%;
+  margin-top: 18px;
+}
+.contact-name-container3::before {
+  content: "Suggestions";
+  position: relative;
+  top: 20px;
+  left: -5%;
+  width: 50px;
+  height: 20px;
+  color: #00000090;
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.5;
+  z-index: 12;
+  background-color: transparent;
+  transition: 0.5s;
+}
+.contact-name-container3:hover::before {
+  color: #af147290;
+  width: max-content;
+  position: relative;
+  left: -25%;
+  top: -16px;
+  background-color: #f9d5d2;
+  outline: 6px ridge #f3aba570;
+  padding: 0px 10px;
+  font-weight: 700;
+  opacity: 1;
+}
+.contact-name-input3 {
+  background-color: #f9f9f9;
+  color: #00000090;
+  font-size: 14px;
+  font-weight: 500;
+  width: 200px;
+  height: 100px;
+  position: relative;
+  top: -22px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px #bbbbbb40, -5px -5px 10px #bbbbbb20,
+    inset 3px 3px 2px 2px #bbbbbb20, inset -5px -5px 5px #ffffff;
+  box-sizing: border-box;
+  border-radius: inherit;
+  border: none;
+  outline: none;
+  padding: 0;
+  transition: 0.5s;
+  padding: 10px;
+  margin: 0px;
+}
+.contact-name-input3:hover {
+  width: 100%;
+  height: 150px;
+  outline: 6px ridge #f3aba550;
+}
+.contact-name-input {
+  color: #00000090;
+  font-weight: 500;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: -22px;
+  background-color: transparent;
+  padding-left: 15px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  margin: 0px;
+  border-radius: inherit;
+  border: none;
+  outline: none;
+}
+.contact-name-input:hover {
+  outline: 6px ridge #f3aba550;
+}
+.contact-submit-button {
+  width: 100px;
+  height: 30px;
+  color: #562000;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #af57c7,
+    #2d7dbe,
+    #8ee80e,
+    #fff52d,
+    #e36357,
+    #af57c7,
+    #2d7dbe
+  );
+  background-size: 450%;
+  background-position-x: right;
+  animation: submit 5s linear infinite;
+  box-shadow: 2px 2px 8px #ffffff90;
+  transition: 0.5s;
+}
+
+.contact-submit-button:hover {
+  scale: 1.2;
+}
+@keyframes submit {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+.contact-submit-button:active {
+  scale: 0.9;
+}

@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.project-bg-container {
+  background-color: rgb(215, 255, 255);
+  height: 110vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  perspective: 10px;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  scroll-snap-align: start;
+}
+.project-details-container {
+  width: 50%;
+  height: 200%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.content-container1 {
+  width: max-content;
+  height: auto;
+  position: sticky;
+  top: 5%;
+}
+.description1 {
+  width: max-content;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+.color-container {
+  position: relative;
+  top: -100%;
+  height: 105%;
+  width: 0;
+  background-color: black;
+  animation: description 1s ease-out 0.5s;
+}
+.content-container2 {
+  width: min-content;
+  position: sticky;
+  top: 12%;
+}
+a {
+  text-decoration: none;
+}
+.description2 {
+  color: rgb(9, 6, 87);
+  width: max-content;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+}
+.link {
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+}
+.description2:hover {
+  color: rgb(13, 9, 126);
+}
+.content-container3 {
+  width: 200%;
+  height: auto;
+  position: sticky;
+  top: 25%;
+}
+.description3 {
+  color: #333;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.project-images-container {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  right: 25%;
+  transform-style: preserve-3d;
+}
+.parallax1,
+.parallax2,
+.parallax3 {
+  position: relative;
+}
+.parallax1 {
+  top: 54%;
+  left: 5%;
+  width: 30%;
+  transform: translateZ(5px) scale(1.2);
+}
+.parallax2 {
+  top: 60%;
+  left: 38%;
+  width: 30%;
+  transform: translateZ(1px) scale(4);
+}
+.parallax3 {
+  top: 110%;
+  left: 0%;
+  width: 30%;
+  transform: translateZ(-3px) scale(3);
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+@media screen and (min-width: 576px) {
+  .parallax1 {
+    top: 50%;
+  }
+  .parallax2 {
+    top: 60%;
+  }
+
+  .parallax3 {
+    top: 130%;
+    left: 20%;
+    transform: translateZ(-3px) scale(3.4);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .description1 {
+    font-size: 45px;
+  }
+  .content-container2 {
+    top: 12%;
+  }
+  .description2 {
+    font-size: 65px;
+  }
+  .link {
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+  }
+  .description2:hover {
+    color: rgb(68, 65, 146);
+  }
+  .content-container3 {
+    width: 200%;
+  }
+  .description3 {
+    color: #333;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .project-details-container {
+    width: 50%;
+  }
+  .content-container1 {
+    top: 10%;
+  }
+  .description1 {
+    font-size: 45px;
+  }
+  .link {
+    height: 40px;
+    width: 40px;
+  }
+  .content-container2 {
+    top: 20%;
+  }
+  .description2 {
+    font-size: 75px;
+  }
+  .content-container3 {
+    width: 95%;
+    top: 40%;
+  }
+  .description3 {
+    font-size: 22px;
+  }
+  .project-images-container {
+    width: 50%;
+    right: 0px;
+  }
+
+  .parallax1 {
+    top: 45%;
+    left: 0;
+    transform: translateZ(5px) scale(0.6);
+  }
+  .parallax2 {
+    top: -10%;
+    left: 90%;
+    transform: translateZ(-8px) scale(3);
+  }
+
+  .parallax3 {
+    top: 110%;
+    left: -20%;
+    transform: translateZ(1px) scale(1.2);
+  }
+}
+
+@keyframes description {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}

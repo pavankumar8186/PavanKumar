@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.project-j-bg-container {
+  background-color: rgb(215, 255, 255);
+  height: 110vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  perspective: 10px;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  scroll-snap-align: start;
+}
+.project-j-details-container {
+  width: 50%;
+  height: 200%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.j-content-container1 {
+  width: max-content;
+  height: auto;
+  position: sticky;
+  top: 5%;
+}
+.j-description1 {
+  width: max-content;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+.j-color-container {
+  position: relative;
+  top: -100%;
+  height: 105%;
+  width: 0;
+  background-color: black;
+  animation: description 1s ease-out 0.5s;
+}
+.j-content-container2 {
+  width: min-content;
+  position: sticky;
+  top: 12%;
+}
+a {
+  text-decoration: none;
+}
+.j-description2 {
+  color: rgb(9, 6, 87);
+  width: max-content;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+}
+.j-link {
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+}
+.j-description2:hover {
+  color: rgb(13, 9, 126);
+}
+.j-content-container3 {
+  width: 200%;
+  height: auto;
+  position: sticky;
+  top: 25%;
+}
+.j-description3 {
+  color: #333;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.j-project-images-container {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  right: 25%;
+  transform-style: preserve-3d;
+}
+.j-parallax1,
+.j-parallax2,
+.j-parallax3 {
+  position: relative;
+}
+.j-parallax1 {
+  top: 55%;
+  left: 20%;
+  width: 30%;
+  transform: translateZ(7px) scale(1);
+  z-index: 5;
+}
+.j-parallax2 {
+  top: 60%;
+  left: 75%;
+  width: 30%;
+  transform: translateZ(-4px) scale(4);
+}
+.j-parallax3 {
+  top: 110%;
+  left: -50%;
+  width: 30%;
+  transform: translateZ(3px) scale(2.5);
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+@media screen and (min-width: 576px) {
+  .j-parallax1 {
+    top: 55%;
+  }
+  .j-parallax2 {
+    top: 70%;
+    left: 60%;
+  }
+  .j-parallax3 {
+    top: 130%;
+    left: -60%;
+    transform: translateZ(3px) scale(2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .j-description1 {
+    font-size: 45px;
+  }
+  .j-content-container2 {
+    top: 12%;
+  }
+  .j-description2 {
+    font-size: 65px;
+  }
+  .j-link {
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+  }
+  .j-description2:hover {
+    color: rgb(68, 65, 146);
+  }
+  .j-content-container3 {
+    top: 30%;
+    width: 200%;
+  }
+  .j-description3 {
+    color: #333;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+  }
+  .j-parallax1 {
+    top: 55%;
+  }
+  .j-parallax2 {
+    top: 90%;
+    left: 60%;
+  }
+  .j-parallax3 {
+    top: 130%;
+    left: -60%;
+    transform: translateZ(3px) scale(2);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .project-j-details-container {
+    width: 50%;
+  }
+  .j-content-container1 {
+    top: 10%;
+  }
+  .j-description1 {
+    font-size: 45px;
+  }
+  .j-link {
+    height: 40px;
+    width: 40px;
+  }
+  .j-content-container2 {
+    top: 20%;
+  }
+  .j-description2 {
+    font-size: 75px;
+  }
+  .j-content-container3 {
+    width: 95%;
+    top: 40%;
+  }
+  .j-description3 {
+    font-size: 22px;
+  }
+  .j-project-images-container {
+    width: 50%;
+    right: 0px;
+  }
+
+  .j-parallax1 {
+    top: 45%;
+    left: 0;
+    transform: translateZ(5px) scale(0.8);
+  }
+  .j-parallax2 {
+    top: 40%;
+    left: 90%;
+    transform: translateZ(-8px) scale(2.5);
+  }
+
+  .j-parallax3 {
+    top: 110%;
+    left: -50%;
+    transform: translateZ(1px) scale(1.4);
+  }
+}
+
+@keyframes description {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}

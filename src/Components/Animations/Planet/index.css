@@ -1,0 +1,71 @@
+.animation {
+  width: auto;
+  display: none;
+  flex-grow: 1;
+  overflow: hidden;
+  animation: animation 6s ease-in-out infinite;
+  justify-self: flex-end;
+}
+.planet-container {
+  width: 270px;
+  height: 270px;
+  background-image: url("https://res.cloudinary.com/dn6ibrmrq/image/upload/v1659425109/port%20folio/earth_ngcgy1.png");
+  background-size: contain;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 55px;
+}
+
+.planet {
+  height: 80%;
+}
+.rocket-container {
+  background-color: transparent;
+  width: 120%;
+  height: 100%;
+  animation: rocket 10s linear infinite;
+}
+.rocket {
+  height: 50px;
+  position: relative;
+  transform: rotate(-35deg);
+}
+
+@media screen and (min-width: 992px) {
+  .animation {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .animation {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@keyframes rocket {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animation {
+  0%,
+  100% {
+    transform: translate(0px, 70px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+}
