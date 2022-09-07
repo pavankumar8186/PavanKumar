@@ -52,16 +52,4 @@ class App extends Component {
 }
 
 export default App;
-/*
 
-        <NavBar />
-        <FloatingMenu />
-        <Sidebar />
-        <Home />
-        <About />
-        <Skills />
-        <BookHub />
-        <JobbyApp />
-        <IplDashboard />
-        <Contact />
-        */
